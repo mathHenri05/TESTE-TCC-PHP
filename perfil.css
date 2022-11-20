@@ -1,0 +1,243 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+
+/* Some Variables */
+:root{
+    --main-color: #ffb43a;
+    --hover-color: hsl(37, 94%, 57%);
+    --body-color: #1e1e2a;
+    --container-color: #2d2e37;
+    --text-color: #fcfeff;
+    --header-color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+section{
+    padding: 3rem 0 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+.bx{
+    cursor: pointer;
+}
+
+body{
+    background: var(--body-color);
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--header-color);
+    z-index: 100;
+}
+
+/* Nav */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Logo */
+.logo{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+
+.logo span{
+    color: var(--main-color);
+}
+
+/* Search Box */ 
+.search-box{
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: var(--container-color);
+    border-radius: 4rem;
+    margin-right: 1rem;
+}
+
+.search-box .bx{
+    font-size: 1.1rem;
+    color: var(--header-color);
+}
+
+.search-box .bx:hover{
+    color: var(--main-color);
+}
+
+#search-input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: transparent;
+    font-size: 0.938rem;
+}
+
+/* User */
+.user{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bx-user{
+    width: 40px;
+    height: 30px;
+    font-size: 30px;
+    object-fit: cover;
+    object-position: center;
+    color: var(--body-color);
+}
+
+h1{
+    margin-top: 0.1rem;
+    font-family: 'Bebas Neue';
+    font-size: 0.8rem;
+    color: var(--body-color);
+    letter-spacing: 0.1rem;
+}
+
+/* Section */ 
+.section-perfil-usuario{
+    margin-top: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seguindo, .seguidores{
+    margin: 13px;
+}
+
+.info-seguidores{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.section-perfil-usuario .perfil-usuario-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--container-color);
+    margin-bottom: 1.25rem;
+}
+
+.section-perfil-usuario .perfil-usuario-portada{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 17rem;
+    justify-content: center;
+    background: var(--container-color);
+    border-radius: 0 0 20px 20px;
+}
+
+.section-perfil-usuario .perfil-usuario-avatar{
+    display: flex;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid white;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 155px;
+    left: calc(50% - 90px);
+    box-shadow: 0 0 12px darkgray;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.section-perfil-usuario .perfil-usuario-body .titulo{
+    display: block;
+    width: 100%;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-perfil-usuario .perfil-usuario-body .texto{
+    color: gray;
+    font-size: 0.95rem;
+}
+
+.section-perfil-usuario .perfil-usuario-footer,
+.section-perfil-usuario .perfil-usuario-bio{
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: block;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    color: var(--body-color);
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 0 12px darkgray;
+}
+
+.section-perfil-usuario .perfil-usuario-bio{
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.section-perfil-usuario .perfil-usuario-body{
+    width: 75%;
+}
+
+.section-perfil-usuario .lista-dados{
+    width: 50%;
+    list-style: none;
+}
+
+.section-perfil-usuario .lista-dados li{
+    padding: 5px 0;
+}
+
+.section-perfil-usuario .lista-dados li > .icono{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
